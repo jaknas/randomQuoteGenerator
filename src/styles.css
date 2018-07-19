@@ -1,0 +1,103 @@
+html {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+  overflow: hidden;
+}
+
+.bigos {
+  width: 32rem;
+  height: 12rem;
+  display: grid;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.Quote {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "text text text"
+    "author twitter button";
+  grid-gap: 5px;
+  padding: 1em;
+}
+.button {
+  align-self: end;
+  grid-area: button;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+.text {
+  text-align: justify;
+  grid-area: text;
+  align-self: center;
+  justify-content: center;
+}
+.author {
+  grid-area: author;
+  margin: 0;
+  font-style: italic;
+  width: 100%;
+  align-self: end;
+  text-align: left;
+  padding: 8px 24px;
+  padding-left: 0px;
+  line-height: 1.4em;
+}
+.twitter {
+  grid-area: twitter;
+  text-decoration: none;
+  color: black;
+  align-self: end;
+  margin-right: 5em;
+}
+
+@media (max-width: 599px) {
+  .bigos {
+    width: 24rem;
+    height: 20rem;
+  }
+  .Quote {
+    grid-template-areas:
+      "text"
+      "author"
+      "button"
+      "twitter";
+    grid-gap: 0px;
+  }
+  .twitter--button {
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+  }
+  .twitter {
+    margin-right: 0;
+  }
+  .button {
+    align-self: end;
+    justify-self: center;
+    margin-bottom: 0;
+  }
+  .author {
+    text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 420px) {
+  .bigos {
+    width: 20rem;
+    height: 22rem;
+  }
+}
