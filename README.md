@@ -2,6 +2,8 @@
 
 ## A simple random quote generator single page application built with React.
 
+### deployed at: https://quotegenerator.netlify.com/
+
 * Idea and user stories provided by [freeCodeCamp](https://www.freecodecamp.org/).
 
 * Project built from scratch and with use of [create-react-app template](https://github.com/facebook/create-react-app)
