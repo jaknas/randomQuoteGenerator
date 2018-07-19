@@ -3,6 +3,7 @@
 ## A simple random quote generator single page application built with React.
 
 ### deployed at: https://quotegenerator.netlify.com/
+#### with FCC tests at: https://random-quote-generator-czisgoaqqb.now.sh/
 
 * Idea and user stories provided by [freeCodeCamp](https://www.freecodecamp.org/).
 
