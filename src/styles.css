@@ -42,6 +42,7 @@ html {
   grid-area: text;
   align-self: center;
   justify-content: center;
+  margin-bottom: 0;
 }
 .author {
   grid-area: author;
