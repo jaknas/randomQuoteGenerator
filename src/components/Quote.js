@@ -10,10 +10,10 @@ export default class Quote extends Component {
 
   async componentDidMount() {
     const res = await fetch("https://talaikis.com/api/quotes/random/");
-    const something = await res.json();
+    const firstLoad = await res.json();
     this.setState({
-      text: something.quote,
-      author: something.author
+      text: firstLoad.quote,
+      author: firstLoad.author
     });
   }
 
